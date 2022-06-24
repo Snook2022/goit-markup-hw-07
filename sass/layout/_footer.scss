@@ -17,11 +17,12 @@
   line-height: 1.71;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
-.link-map:hover,
-.link-map:focus {
-  color: var(--acent-color);
-}
+
 .page-footer {
   background-color: var(--hero-bg-color);
   padding-top: 60px;
@@ -48,10 +49,10 @@
 }
 .contacts-footer-list .link-footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-footer-list .link-footer:hover,
-.contacts-footer-list .link-footer:focus {
-  color: var(--acent-color);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
 
 .footer-soc-list {
@@ -61,10 +62,11 @@
   width: 44px;
   height: 44px;
   margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.footer-soc-item:last-child {
-  margin-right: 0;
-}
+
 .footer-soc-link {
   width: 100%;
   height: 100%;
@@ -75,15 +77,14 @@
   justify-content: center;
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color);
+  }
 }
 
 .footer-soc-icon {
   fill: var(--primary-bg-color);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--acent-color);
 }
 
 .footer-soc-title {

@@ -25,11 +25,12 @@
   padding-left: 16px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--acent-color);
+  }
 }
-.subscribe-form input:hover,
-.subscribe-form input:focus {
-  border-color: var(--acent-color);
-}
+
 .btn-subscribe {
   cursor: pointer;
   display: flex;
@@ -47,12 +48,12 @@
   border: 1px solid var(--acent-color);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
-.btn-subscribe:hover,
-.btn-subscribe:focus {
-  background-color: #188ce8;
-}
 .subscribe-footer {
   margin-left: auto;
 }
