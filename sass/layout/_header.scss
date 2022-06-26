@@ -42,7 +42,9 @@
     color: var(--acent-color);
   }
 }
-
+.nav__list .nav__link.current {
+  color: var(--acent-color);
+}
 .main-nav {
   display: flex;
   align-items: center;
